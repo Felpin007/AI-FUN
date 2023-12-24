@@ -4,7 +4,7 @@
 Este projeto é uma animação interativa de uma árvore construída usando p5.js, uma biblioteca JavaScript que começa com o objetivo original do Processing, de tornar a codificação acessível para artistas, designers, educadores e iniciantes, e reinterpreta isso para a web de hoje.
 
 ![Imagem da Animação com Chuva](url_da_imagem_chuva "Animação com Chuva")
-![Imagem da Animação com Neve](url_da_imagem_neve "Animação com Neve")
+![Imagem da Animação com Neve](nevando.png "Animação com Neve")
 
 ## Descrição
 
