@@ -3,8 +3,8 @@
 
 Este projeto é uma animação interativa de uma árvore construída usando p5.js, uma biblioteca JavaScript que começa com o objetivo original do Processing, de tornar a codificação acessível para artistas, designers, educadores e iniciantes, e reinterpreta isso para a web de hoje.
 
-![Imagem da Animação com Chuva](url_da_imagem_chuva "Animação com Chuva")
-![Imagem da Animação com Neve](nevando.png "Animação com Neve")
+![](chovendo.png "Animação com Chuva")
+
 
 ## Descrição
 
@@ -27,6 +27,7 @@ O projeto consiste em um único arquivo HTML que carrega a biblioteca p5.js e um
 
 - Pressione a tecla 'c' para alternar a nuvem (chuva).
 - Pressione a tecla 'n' para alternar a neve.
+- ![](nevando.png "Animação com Neve")
 - Use as teclas de seta para controlar a direção do vento quando a nuvem está visível.
 
 ## Dependências
