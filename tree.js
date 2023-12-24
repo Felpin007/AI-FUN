@@ -51,7 +51,7 @@ class Drop {
 }
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(windowWidth, windowHeight);
   greenLeaf = color(34, 139, 34); // cor verde para as folhas
   whiteLeaf = color(255, 255, 255); // cor branca para as folhas
   darkGreenLeaf = color(0, 100, 0); // cor verde escuro para as folhas
@@ -59,6 +59,9 @@ function setup() {
     drops[i] = new Drop(random(width), random(-500, -50));
     snowflakes[i] = new Snowflake(random(width), random(-500, -50));
   }
+}
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -142,7 +145,7 @@ function drawLightning() {
 }
 
 function keyPressed() {
-  if (cloudVisible) {
+  if (cloudVisible || snowing) {
     if (keyCode === RIGHT_ARROW) {
       windForceX += 0.01; // Aumenta a força do vento para a direita
     } else if (keyCode === LEFT_ARROW) {
@@ -166,7 +169,7 @@ function keyPressed() {
 }
 
 function keyReleased() {
-  if (cloudVisible) {
+  if (cloudVisible || snowing) {
     if (keyCode === RIGHT_ARROW || keyCode === LEFT_ARROW) {
       windForceX = 0; // Reseta a força do vento horizontal quando as teclas são liberadas
     } else if (keyCode === DOWN_ARROW) {
